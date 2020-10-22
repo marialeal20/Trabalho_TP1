@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1601313247 source:/home/luan-jc/Documentos/Tp1/Proj_Test/main.cpp
+	<iostream>
+	<string>
+	"dominios.h"
+	"teste.h"
+
+1601313329 /home/luan-jc/Documentos/Tp1/Proj_Test/dominios.h
+	<stdexcept>
+	<string>
+
+1601313247 /home/luan-jc/Documentos/Tp1/Proj_Test/teste.h
+	"dominios.h"
+
+1601313247 source:/home/luan-jc/Documentos/Tp1/Proj_Test/teste.cpp
+	"teste.h"
+	<iostream>
+
+1601313433 source:/home/luan-jc/Documentos/Tp1/Proj_Test/dominios.cpp
+	"dominios.h"
+	<iostream>
+
+1601339385 source:d:\documentos\faculdade\tp1\trabalhotp1\trabalho_f\dominios.cpp
+	"dominios.h"
+	<iostream>
+
+1601342762 d:\documentos\faculdade\tp1\trabalhotp1\trabalho_f\dominios.h
+	<stdexcept>
+	<string>
+
+1601339385 source:d:\documentos\faculdade\tp1\trabalhotp1\trabalho_f\main.cpp
+	<iostream>
+	<string>
+	"dominios.h"
+	"teste.h"
+
+1601341340 d:\documentos\faculdade\tp1\trabalhotp1\trabalho_f\teste.h
+	"dominios.h"
+
+1601342762 source:d:\documentos\faculdade\tp1\trabalhotp1\trabalho_f\teste.cpp
+	"teste.h"
+	<iostream>
+
+1601342899 source:c:\users\luanj\onedrive\documentos\trabalho_f\dominios.cpp
+	"dominios.h"
+	<iostream>
+
+1601342762 c:\users\luanj\onedrive\documentos\trabalho_f\dominios.h
+	<stdexcept>
+	<string>
+
+1601339385 source:c:\users\luanj\onedrive\documentos\trabalho_f\main.cpp
+	<iostream>
+	<string>
+	"dominios.h"
+	"teste.h"
+
+1601341340 c:\users\luanj\onedrive\documentos\trabalho_f\teste.h
+	"dominios.h"
+
+1601342762 source:c:\users\luanj\onedrive\documentos\trabalho_f\teste.cpp
+	"teste.h"
+	<iostream>
+

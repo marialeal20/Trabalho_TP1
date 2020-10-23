@@ -1,4 +1,3 @@
-
 #include "teste.h"
 #include <iostream>
 // Definições de métodos.

@@ -232,8 +232,8 @@ class TUValorApl {
 
 private:
 
-    const static float valorValido   = 5000.00;
-    const static float valorInvalido = -15;
+    constexpr static float valorValido   = 5000.00;
+    constexpr static float valorInvalido = -15;
 
     ValorApl *valorApl;
 
@@ -273,8 +273,8 @@ class TUTaxa {
 
 private:
 
-    static const float taxaValida = 150;
-    static const float taxaInvalida = 500;
+    static constexpr float taxaValida = 150;
+    static constexpr float taxaInvalida = 500;
 
     Taxa *taxa;
 
@@ -314,8 +314,8 @@ class TUValorMin {
 
 private:
 
-    const static float valorValido   = 5000.00;
-    const static float valorInvalido = -15;
+    constexpr static float valorValido   = 5000.00;
+    constexpr static float valorInvalido = -15;
 
     ValorMin *valorMin;
 

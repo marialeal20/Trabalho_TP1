@@ -428,7 +428,7 @@ public:
 /********* Classe CodigoBanco **************/
 
 ///
-/// A classe CodigoBanco possui metodos publicos que validam os 5 maiores bancos brasileiros por ativos totais e setam os codigos fornecidos a cada um desses bancos
+/// A classe CodigoBanco possui metodosicacao publicos que validam os 5 maiores bancos brasileiros por ativos totais e setam os codigos fornecidos a cada um desses bancos
 ///
 /// 341- "Itaú Unibanco S.A.", 001-"Banco do Brasil S.A.", 237- "Banco Bradesco S.A.", 104-"Caixa Econômica Federal", 033-"Banco Santander(Brasil) S.A."  ;
 

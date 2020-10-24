@@ -1,6 +1,8 @@
 
 #include "dominios.h"
 #include <iostream>
+#include <string>
+#include "entidades.h"
 
 
 /************ Classe Endereço *****************************/

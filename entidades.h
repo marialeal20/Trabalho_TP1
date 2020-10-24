@@ -25,15 +25,15 @@ public:
         this->data = data;
     }
 
-    CodigoAplicacao getCodigoAplicacao() const{
+    CodigoAplicacao getCodigoAplicacao(){
         return codigoAplicacao;
     }
 
-    ValorApl getValorApl() const {
+    ValorApl getValorApl() {
         return valorAplicacao;
     }
 
-    Data getData() const{
+    Data getData(){
         return data;
     }
 
@@ -86,17 +86,32 @@ public:
         this->valorMin=valorMin;
     }
 
+    CodigoProduto getCodigoProduto(){
+        return codigoProduto;
+    }
+    Classe getClasse() {
+        return classe;
+    }
+    Emissor getEmissor(){
+        return emissor;
+    }
+    Prazo getPrazo() {
+        return prazo;
+    }
+    Data getData() {
+        return vencimento;
+    }
+    Taxa getTaxa() {
+        return taxa;
+    }
+    Horario getHorario() {
+        return horario;
+    }
+    ValorMin getValorMin(){
+        return valorMin;
+    }
+
 
 };
-
-
-
-
-
-
-
-
-
-
 
 #endif // ENTIDADES_H_INCLUDED

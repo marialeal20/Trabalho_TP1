@@ -3,6 +3,7 @@
 #include "dominios.h"
 #include "teste.h"
 #include "entidades.h"
+#include "testesentidade.h"
 
 using namespace std;
 
@@ -183,6 +184,23 @@ int main()
         case TUEmissor::SUCESSO: cout << "SUCESSO - Emissor"<<"\n";
                                 break;
         case TUEmissor::FALHA  : cout << "FALHA - Emissor"<<"\n";
+                                break;
+                                }
+
+
+    TUAplicacao testeaplicacao;
+    switch(testeaplicacao.run()){
+        case TUAplicacao::SUCESSO: cout << "SUCESSO - Aplicação"<<"\n";
+                                break;
+        case TUAplicacao::FALHA  : cout << "FALHA - Aplicação"<<"\n";
+                                break;
+                                }
+
+    TUProduto testeproduto;
+    switch(testeproduto.run()){
+        case TUProduto::SUCESSO: cout << "SUCESSO - Produto"<<"\n";
+                                break;
+        case TUProduto::FALHA  : cout << "FALHA - Produto"<<"\n";
                                 break;
                                 }
     return 0;

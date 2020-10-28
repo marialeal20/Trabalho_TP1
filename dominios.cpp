@@ -305,9 +305,9 @@ void ValorMin::setValorMin(float valorMin) throw (invalid_argument){
 
 /************ Classe Conta *****************************/
 
-void Conta::validar(string conta) throw (invalid_argument){
-
-    if(conta.length() != contaLength ){
+void Numero::validar(string numero) throw (invalid_argument){
+    string conta = numero;
+    if(conta.length() != numeroLength ){
         throw invalid_argument ("Conta do tamanho errado");
         // primeiro throw
     }
@@ -344,11 +344,11 @@ void Conta::validar(string conta) throw (invalid_argument){
 
 
 }
-void Conta::setConta(string conta) throw (invalid_argument){
+void Numero::setNumero(string numero) throw (invalid_argument){
 
-    validar(conta);
+    validar(numero);
 
-    this->conta = conta;
+    this->numero = numero;
 
 }
 

@@ -345,21 +345,21 @@ int TUValorMin::run(){
 // ---------------------------------------------------
 
 
-const string TUConta::contaValido = "953856-4";
-const string TUConta::contaInvalido = "953856-5";
+const string TUNumero::contaValido = "953856-4";
+const string TUNumero::contaInvalido = "953856-5";
 
-void TUConta::setUp(){
-    conta = new Conta();;
+void TUNumero::setUp(){
+    numero = new Numero();;
 }
 
-void TUConta::tearDown(){
-    delete conta;
+void TUNumero::tearDown(){
+    delete numero;
 }
 
-void TUConta::testarCenarioSucesso(){
+void TUNumero::testarCenarioSucesso(){
     try{
-        conta->setConta(contaValido);
-        if (conta->getConta() != contaValido)
+        numero->setNumero(contaValido);
+        if (numero->getNumero() != contaValido)
             estado = FALHA;
     }
     catch(invalid_argument excecao){
@@ -367,9 +367,9 @@ void TUConta::testarCenarioSucesso(){
     }
 }
 
-void TUConta::testarCenarioFalha(){
+void TUNumero::testarCenarioFalha(){
     try{
-        conta->setConta(contaInvalido);
+        numero->setNumero(contaInvalido);
         estado = FALHA;
     }
     catch(invalid_argument excecao){
@@ -377,7 +377,7 @@ void TUConta::testarCenarioFalha(){
     }
 }
 
-int TUConta::run(){
+int TUNumero::run(){
 
     setUp();
     testarCenarioSucesso();

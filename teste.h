@@ -232,8 +232,8 @@ class TUValorApl {
 
 private:
 
-    constexpr static float valorValido   = 5000.00;
-    constexpr static float valorInvalido = -15;
+    const static float valorValido   = 5000.00;
+    const static float valorInvalido = -15;
 
     ValorApl *valorApl;
 
@@ -273,8 +273,8 @@ class TUTaxa {
 
 private:
 
-    static constexpr float taxaValida = 150;
-    static constexpr float taxaInvalida = 500;
+    static const float taxaValida = 150;
+    static const float taxaInvalida = 500;
 
     Taxa *taxa;
 
@@ -314,8 +314,8 @@ class TUValorMin {
 
 private:
 
-    constexpr static float valorValido   = 5000.00;
-    constexpr static float valorInvalido = -15;
+    const static float valorValido   = 5000.00;
+    const static float valorInvalido = -15;
 
     ValorMin *valorMin;
 
@@ -350,14 +350,14 @@ public:
 ///
 /// Teste de unidade da classe Conta
 ///
-class TUConta {
+class TUNumero {
 
 private:
 
     static const string contaValido;
     static const string contaInvalido;
 
-    Conta *conta;
+    Numero *numero;
 
     int estado = 0;
 ///

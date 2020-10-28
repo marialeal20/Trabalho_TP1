@@ -62,3 +62,50 @@
 	"teste.h"
 	<iostream>
 
+1603668400 source:d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\dominios.cpp
+	"dominios.h"
+	<iostream>
+	<string>
+	"entidades.h"
+
+1603666013 d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\dominios.h
+	<stdexcept>
+	<string>
+
+1603713094 d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\entidades.h
+	"dominios.h"
+	<string>
+
+1603713714 source:d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\main.cpp
+	<iostream>
+	<string>
+	"dominios.h"
+	"teste.h"
+	"entidades.h"
+	"testesentidade.h"
+
+1603668455 d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\teste.h
+	<string>
+	"dominios.h"
+
+1603714388 d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\testesentidade.h
+	<string>
+	"dominios.h"
+	"entidades.h"
+
+1603714007 source:d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\teste.cpp
+	"teste.h"
+	<iostream>
+	<string>
+	"entidades.h"
+
+1603656778 source:d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\entidades.cpp
+	"entidades.h"
+
+1603714388 source:d:\documentos\faculdade\tp1\t2\trabalho_tp1-master\testesentidade.cpp
+	"teste.h"
+	<iostream>
+	<string>
+	"entidades.h"
+	"testesentidade.h"
+

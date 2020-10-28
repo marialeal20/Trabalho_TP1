@@ -98,12 +98,12 @@ int main()
                                 break;
     }
 
-    TUConta conta;
+    TUNumero numero;
 
-    switch(conta.run()){
-        case TUConta::SUCESSO: cout << "SUCESSO - Conta \n";
+    switch(numero.run()){
+        case TUNumero::SUCESSO: cout << "SUCESSO - Numero \n";
                                 break;
-        case TUConta::FALHA  : cout << "FALHA - Conta \n";
+        case TUNumero::FALHA  : cout << "FALHA - Numero \n";
                                 break;
     }
 
@@ -203,6 +203,24 @@ int main()
         case TUProduto::FALHA  : cout << "FALHA - Produto"<<"\n";
                                 break;
                                 }
+
+    TUUsuario testeusuario;
+    switch(testeusuario.run()){
+        case TUUsuario::SUCESSO: cout << "SUCESSO - Usuario"<<"\n";
+                                break;
+        case TUUsuario::FALHA  : cout << "FALHA - Usuario"<<"\n";
+                                break;
+                                }
+
+    TUConta testeconta;
+    switch(testeconta.run()){
+        case TUConta::SUCESSO: cout << "SUCESSO - Conta"<<"\n";
+                                break;
+        case TUConta::FALHA  : cout << "FALHA - Conta"<<"\n";
+                                break;
+                                }
+
+
     return 0;
 
 }

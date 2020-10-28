@@ -35,9 +35,13 @@
 		</Compiler>
 		<Unit filename="dominios.cpp" />
 		<Unit filename="dominios.h" />
+		<Unit filename="entidades.cpp" />
+		<Unit filename="entidades.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="teste.cpp" />
 		<Unit filename="teste.h" />
+		<Unit filename="testesentidade.cpp" />
+		<Unit filename="testesentidade.h" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />

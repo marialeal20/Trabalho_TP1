@@ -272,30 +272,30 @@ class ValorMin{
 /// Os valores da conta são possuem a restrição de estarem no formato XXXXXX-Y, onde os X representam números de 0 a 9 e o Y é o digito verificador. A forma de calculo do digito verificador adotada é feita atravez da Multiplicação de todos os digitos da conta e então divizão e subtração do resultado por 11, o resto desta operação é o digito vérificador valido para a conta.
 ///
 
-class Conta  {
+class Numero  {
     private:
-        string conta;
-        int contaLength = 8;
+        string numero;
+        int numeroLength = 8;
 
 
 ///
 /// Metodo que valida se o valor recebido está dentro das caracteristicas especificadas
-/// @param conta: código do tipo string que representa a conta do usuário, da forma XXXXXX-Y
+/// @param numero: código do tipo string que representa a conta do usuário, da forma XXXXXX-Y
 ///
         void validar(string) throw (invalid_argument);
 
     public:
 ///
 /// Método de chamada para alteração da conta do usuário
-/// @param conta: código do tipo string que representa a conta do usuário, da forma XXXXXX-Y
+/// @param numero: código do tipo string que representa a conta do usuário, da forma XXXXXX-Y
 ///
-        void setConta(string) throw(invalid_argument);
+        void setNumero(string) throw(invalid_argument);
 
 /// Método de retorno da conta já verificada
-/// @return conta: valor da conta do usuário já verificada
+/// @return numero: valor da conta do usuário já verificada
 ///
-        string getConta() const{
-            return conta;
+        string getNumero() const{
+            return numero;
             }
 };
 

@@ -80,17 +80,17 @@ class Produto{
 /// São essas informações (código do profuto, classe, emissor, prazo, data, taxa, horario e valor mínimo)
 private:
 
-///@param CodigoProduto: Classe de domínio que contém os códigos do produto
+///@param CodigoProduto: Classe de domínio que contém o código identificador do produto
     CodigoProduto codigoProduto;
 ///@param Classe: Classe de domínio que contém a classe em que o produto se encontra
     Classe classe;
 ///@param Emissor: Classe de domínio que contém oemissor do produto
     Emissor emissor;
-///@param Prazo: Classe de domínio que contém o prazo do  produto
+///@param Prazo: Classe de domínio que contém o prazo de aplicação do produto em meses
     Prazo prazo;
 ///@param Data: Classe de domínio que contém a data de vencimento do produto
     Data vencimento;
-///@param Taxa: Classe de domínio que contém a taxa do produto
+///@param Taxa: Classe de domínio que contém a taxa de remuneração do produto
     Taxa taxa;
 ///@param Horario: Classe de domínio que contém o horário em que o produto foi adquirido
     Horario horario;
@@ -98,7 +98,7 @@ private:
     ValorMin valorMin;
 
 public:
-///@param CodigoProduto: Classe de domínio que contém os códigos do produto
+///@param CodigoProduto: Classe de domínio que contém o código identificador do produto
     void setCodigoProduto(const CodigoProduto&);
     CodigoProduto getCodigoProduto() const;
 ///@param Classe: Classe de domínio que contém a classe em que o produto se encontra
@@ -107,13 +107,13 @@ public:
 ///@param Emissor: Classe de domínio que contém oemissor do produto
     void setEmissor(const Emissor&);
     Emissor getEmissor() const;
-///@param Prazo: Classe de domínio que contém o prazo do  produto
+///@param Prazo: Classe de domínio que contém o prazo de aplicação do produto
     void setPrazo(const Prazo&);
     Prazo getPrazo() const;
 ///@param Data: Classe de domínio que contém a data de vencimento do produto
     void setData(const Data&);
     Data getData() const;
-///@param Taxa: Classe de domínio que contém a taxa do produto
+///@param Taxa: Classe de domínio que contém a taxa de remuneração do produto
     void setTaxa(const Taxa&);
     Taxa getTaxa() const;
 ///@param Horario: Classe de domínio que contém o horário em que o produto foi adquirido

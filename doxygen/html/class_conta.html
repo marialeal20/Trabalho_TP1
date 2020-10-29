@@ -89,21 +89,29 @@ $(document).ready(function(){initNavTree('class_conta.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="dominios_8h_source.html">dominios.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="entidades_8h_source.html">entidades.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afbf5c6a3bc9b45883b12a14e60ca57a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#afbf5c6a3bc9b45883b12a14e60ca57a4">setConta</a> (string)  throw (invalid_argument)</td></tr>
-<tr class="separator:afbf5c6a3bc9b45883b12a14e60ca57a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a631daa27171cea70b870c5d3bdd94565"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#a631daa27171cea70b870c5d3bdd94565">getConta</a> () const</td></tr>
-<tr class="separator:a631daa27171cea70b870c5d3bdd94565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2691f8d5521f52621ae0d52031a0535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#ae2691f8d5521f52621ae0d52031a0535">setBanco</a> (const <a class="el" href="class_codigo_banco.html">CodigoBanco</a> &amp;)</td></tr>
+<tr class="separator:ae2691f8d5521f52621ae0d52031a0535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf59ae9392525f0fedd80ab8ecee5c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#aadf59ae9392525f0fedd80ab8ecee5c7">setAgencia</a> (const <a class="el" href="class_codigo_agencia.html">CodigoAgencia</a> &amp;)</td></tr>
+<tr class="separator:aadf59ae9392525f0fedd80ab8ecee5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c267ac54cb7a94cf2775588ad6309a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#aa5c267ac54cb7a94cf2775588ad6309a">setNumeroConta</a> (const <a class="el" href="class_numero.html">Numero</a> &amp;)</td></tr>
+<tr class="separator:aa5c267ac54cb7a94cf2775588ad6309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032cb12b66f0251b43b7e57c26f65092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_numero.html">Numero</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#a032cb12b66f0251b43b7e57c26f65092">getNumero</a> () const</td></tr>
+<tr class="separator:a032cb12b66f0251b43b7e57c26f65092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfa3afe02bcc7c9ccf681c7e86656c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_codigo_agencia.html">CodigoAgencia</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#aabfa3afe02bcc7c9ccf681c7e86656c8">getCodigoAgencia</a> () const</td></tr>
+<tr class="separator:aabfa3afe02bcc7c9ccf681c7e86656c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fcf4b4b169a725cc15b6e4b0bcfda4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_codigo_banco.html">CodigoBanco</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_conta.html#a52fcf4b4b169a725cc15b6e4b0bcfda4">getCodigoBanco</a> () const</td></tr>
+<tr class="separator:a52fcf4b4b169a725cc15b6e4b0bcfda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_classe.html">Classe</a> <a class="el" href="class_conta.html">Conta</a> é uma classe composta por metodos set e get para o número de <a class="el" href="class_conta.html">Conta</a> fornecido.</p>
-<p>Os valores da conta são possuem a restrição de estarem no formato XXXXXX-Y, onde os X representam números de 0 a 9 e o Y é o digito verificador. A forma de calculo do digito verificador adotada é feita atravez da Multiplicação de todos os digitos da conta e então divizão e subtração do resultado por 11, o resto desta operação é o digito vérificador valido para a conta. </p>
+<div class="textblock"><p><a class="el" href="class_classe.html">Classe</a> que representa o elemento de conta de usuário</p>
+<p><a class="el" href="class_classe.html">Classe</a> que contem as informações de Número de Agencia, Banco e da <a class="el" href="class_conta.html">Conta</a> registrada para o usuário </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a631daa27171cea70b870c5d3bdd94565"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a631daa27171cea70b870c5d3bdd94565">&#9670;&nbsp;</a></span>getConta()</h2>
+<a id="aabfa3afe02bcc7c9ccf681c7e86656c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfa3afe02bcc7c9ccf681c7e86656c8">&#9670;&nbsp;</a></span>getCodigoAgencia()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,7 +120,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string Conta::getConta </td>
+          <td class="memname"><a class="el" href="class_codigo_agencia.html">CodigoAgencia</a> Conta::getCodigoAgencia </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -124,43 +132,160 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Método de retorno da conta já verificada </p><dl class="section return"><dt>Returns</dt><dd>conta: valor da conta do usuário já verificada </dd></dl>
+<p>Metodo que retorna o valor do número do código da agencia herdada. </p><dl class="section return"><dt>Returns</dt><dd>agencia: classe de dominio que contem o número da agência. </dd></dl>
 
 </div>
 </div>
-<a id="afbf5c6a3bc9b45883b12a14e60ca57a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbf5c6a3bc9b45883b12a14e60ca57a4">&#9670;&nbsp;</a></span>setConta()</h2>
+<a id="a52fcf4b4b169a725cc15b6e4b0bcfda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52fcf4b4b169a725cc15b6e4b0bcfda4">&#9670;&nbsp;</a></span>getCodigoBanco()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Conta::setConta </td>
+          <td class="memname"><a class="el" href="class_codigo_banco.html">CodigoBanco</a> Conta::getCodigoBanco </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>conta</em></td><td>)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td align="right">throw </td><td>(</td><td colspan="2">invalid_argument</td>
-        </tr>
-        <tr>
-          <td align="right"></td><td>)</td><td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Método de chamada para alteração da conta do usuário </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Metodo que retorna o valor do número do banco herdado. </p><dl class="section return"><dt>Returns</dt><dd>banco: classe de dominio que contem o número do banco. </dd></dl>
+
+</div>
+</div>
+<a id="a032cb12b66f0251b43b7e57c26f65092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032cb12b66f0251b43b7e57c26f65092">&#9670;&nbsp;</a></span>getNumero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_numero.html">Numero</a> Conta::getNumero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metodo que retorna o valor do número da conta bancária herdado. </p><dl class="section return"><dt>Returns</dt><dd>numeroConta: classe de dominio que contem o número da conta bancaria. </dd></dl>
+
+</div>
+</div>
+<a id="aadf59ae9392525f0fedd80ab8ecee5c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf59ae9392525f0fedd80ab8ecee5c7">&#9670;&nbsp;</a></span>setAgencia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Conta::setAgencia </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_codigo_agencia.html">CodigoAgencia</a> &amp;&#160;</td>
+          <td class="paramname"><em>agencia</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metodo que aloca o valor da agencia bancária herdada. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">conta</td><td>código do tipo string que representa a conta do usuário, da forma XXXXXX-Y </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_codigo_agencia.html">CodigoAgencia</a></td><td><a class="el" href="class_classe.html">Classe</a> que define o código da agência Bancária. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="dominios_8h_source.html">dominios.h</a></li>
-<li>dominios.cpp</li>
+<a id="ae2691f8d5521f52621ae0d52031a0535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2691f8d5521f52621ae0d52031a0535">&#9670;&nbsp;</a></span>setBanco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Conta::setBanco </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_codigo_banco.html">CodigoBanco</a> &amp;&#160;</td>
+          <td class="paramname"><em>banco</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metodo que aloca o valor da banco herdado. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="class_codigo_banco.html">CodigoBanco</a></td><td><a class="el" href="class_classe.html">Classe</a> que define o código do banco. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa5c267ac54cb7a94cf2775588ad6309a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c267ac54cb7a94cf2775588ad6309a">&#9670;&nbsp;</a></span>setNumeroConta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Conta::setNumeroConta </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_numero.html">Numero</a> &amp;&#160;</td>
+          <td class="paramname"><em>numeroConta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metodo que aloca o número da conta bancária herdada. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroConta</td><td><a class="el" href="class_classe.html">Classe</a> que define o Número da conta bancária. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="entidades_8h_source.html">entidades.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -168,7 +293,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_conta.html">Conta</a></li>
-    <li class="footer">Generated on Mon Sep 28 2020 22:28:42 for Projeto_Tp1 by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Wed Oct 28 2020 23:16:59 for Projeto_Tp1 by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

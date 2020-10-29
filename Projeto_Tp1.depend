@@ -109,3 +109,50 @@
 	"entidades.h"
 	"testesentidade.h"
 
+1603935252 source:d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\dominios.cpp
+	"dominios.h"
+	<iostream>
+	<string>
+	"entidades.h"
+
+1603935252 d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\dominios.h
+	<stdexcept>
+	<string>
+
+1603937463 d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\entidades.h
+	"dominios.h"
+	<string>
+
+1603935252 source:d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\entidades.cpp
+	"entidades.h"
+
+1603935252 source:d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\main.cpp
+	<iostream>
+	<string>
+	"dominios.h"
+	"teste.h"
+	"entidades.h"
+	"testesentidade.h"
+
+1603935252 d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\teste.h
+	<string>
+	"dominios.h"
+
+1603935252 d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\testesentidade.h
+	<string>
+	"dominios.h"
+	"entidades.h"
+
+1603935252 source:d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\teste.cpp
+	"teste.h"
+	<iostream>
+	<string>
+	"entidades.h"
+
+1603935252 source:d:\documentos\faculdade\tp1\trab_2_dv\trabalho_tp1\testesentidade.cpp
+	"teste.h"
+	<iostream>
+	<string>
+	"entidades.h"
+	"testesentidade.h"
+

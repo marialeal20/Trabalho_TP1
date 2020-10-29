@@ -7,11 +7,12 @@ using namespace std;
 
 
 // Codigo representando a Aplicacao
+/**************Entidade Aplicação************/
 ///
-/// Classe de entidade que caracteriza as aplicações possíveis de serem feitas no investimento.  
+/// Classe de entidade que caracteriza as aplicações possíveis de serem feitas no investimento.
 ///
 ///Essa classe contém todas as informações sobre as aplicações (código, valor e data da aplicação).
-
+///
 class Aplicacao{
 
 private:
@@ -71,7 +72,6 @@ inline Data Aplicacao::getData() const
     return data;
 }
 
-//-----------------------------------------
 
 class Produto{
 
@@ -205,20 +205,65 @@ inline ValorMin Produto::getValorMin() const
     return valorMin;
 }
 
-// ------------------------------------------------------------------------------------
-
+/**************Elemento de Conta do Usuario************/
+///
+/// Classe que representa o elemento de conta de usuário
+///
+/// Classe que contem as informações de Número de Agencia, Banco e da Conta registrada para o usuário
+///
 class Conta{
     private:
+///
+/// Metodo que herda os valores da classe CodigoBanco.
+/// @param banco: classe de dominio que contem o código do banco.
+///
         CodigoBanco banco;
+///
+/// Metodo que herda os valores da classe CodigoAgencia.
+/// @param agencia: classe de dominio que contem o código da agencia.
+///
         CodigoAgencia agencia;
+///
+/// Metodo que herda os valores da classe Numero.
+/// @param numeroConta: classe de dominio que contem o número da conta bancaria.
+///
         Numero numeroConta;
+
     public:
+///
+/// Metodo que aloca o valor da banco herdado.
+/// @param CodigoBanco: Classe que define o código do banco.
+///
         void setBanco(const CodigoBanco&);
+
+///
+/// Metodo que aloca o valor da agencia bancária herdada.
+/// @param CodigoAgencia: Classe que define o código da agência Bancária.
+///
         void setAgencia(const CodigoAgencia&);
+
+///
+/// Metodo que aloca o número da conta bancária herdada.
+/// @param numeroConta: Classe que define o Número da conta bancária.
+///
         void setNumeroConta(const Numero&);
 
+///
+/// Metodo que retorna o valor do número da conta bancária herdado.
+/// @return numeroConta: classe de dominio que contem o número da conta bancaria.
+///
         Numero getNumero() const;
+
+///
+/// Metodo que retorna o valor do número do código da agencia herdada.
+/// @return agencia: classe de dominio que contem o número da agência.
+///
         CodigoAgencia getCodigoAgencia() const;
+
+///
+/// Metodo que retorna o valor do número do banco herdado.
+/// @return banco: classe de dominio que contem o número do banco.
+///
         CodigoBanco getCodigoBanco() const;
 };
 
@@ -246,26 +291,104 @@ inline Numero Conta::getNumero() const{
     return numeroConta;
 }
 
-//-----------------------------------------------
+/**************Elemento de Usuário************/
+///
+/// Classe que representa o usuário
+///
+/// Classe que contem as informações de Nome, Endereço, Cep, CPF e Senha do Usuario.
+///
 class Usuario{
     private:
+///
+/// Metodo que herda os valores da classe Nome.
+/// @param nomeUsuario: classe de dominio que contem o Nome de usuário.
+///
         Nome nomeUsuario;
+
+///
+/// Metodo que herda os valores da classe Endereço.
+/// @param endUsuario: classe de dominio que contem o endereço do usuario.
+///
         Endereco endUsuario;
+
+///
+/// Metodo que herda os valores da classe Cep.
+/// @param cepUsuario: classe de dominio que contem o cep do usuário.
+///
         Cep cepUsuario;
+
+///
+/// Metodo que herda os valores da classe Cpf.
+/// @param cpfUsuario: classe de dominio que contem o cpf do usuario.
+///
         Cpf cpfUsuario;
+
+///
+/// Metodo que herda os valores da classe Senha.
+/// @param senhaUsuario: classe de dominio que contem a senha do usuario.
+///
         Senha senhaUsuario;
+
     public:
 
+///
+/// Metodo que aloca o valor do nome de usuario herdado.
+/// @param Nome: Classe que define o nome de usuario.
+///
         void setNomeUsuario(const Nome&);
+
+///
+/// Metodo que aloca o valor do endereço de usuário herdado.
+/// @param Endereco: Classe que define o endereço de usuário.
+///
         void setEnderecoUsuario(const Endereco&);
+
+///
+/// Metodo que aloca o valor do cep do usuário herdado.
+/// @param Cep: Classe que define o cep do usuário.
+///
         void setCepUsuario(const Cep&);
+
+///
+/// Metodo que aloca o valor do cpf de usuário herdado
+/// @param CodigoBanco: Classe que define o cpf do usuário.
+///
         void setCpfUsuario(const Cpf&);
+
+///
+/// Metodo que aloca o valor da senha herdada.
+/// @param CodigoBanco: Classe que define a senha do usuário.
+///
         void setSenhaUsuario(const Senha&);
 
+///
+/// Metodo que retorna o nome de usuário herdado.
+/// @return nomeUsuario: Classe que define o nome.
+///
         Nome getNome() const;
+
+///
+/// Metodo que retorna o endereço de usuário herdado.
+/// @return endUsuario: Classe que define o endereço.
+///
         Endereco getEndereco() const;
+
+///
+/// Metodo que retorna o cep do usuário herdado.
+/// @return cepUsuario: Classe que define o cep.
+///
         Cep getCep() const;
+
+///
+/// Metodo que retorna o cpf do usuário herdado.
+/// @return cpfUsuario: Classe que define o cpf.
+///
         Cpf getCpf() const;
+
+///
+/// Metodo que aloca a senha herdada.
+/// @return senhaUsuario: Classe que define a senha.
+///
         Senha getSenha() const;
 
 };
